@@ -46,10 +46,17 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Cops
 gem 'rubocop', '1.65.0'
 gem 'rubocop-rails', require: false
 
+# Scraping
 gem 'watir', '7.3.0'
+
+# Styles
+gem 'bootstrap', '~> 5.3.2'
+gem 'dartsass-sprockets'
+gem 'jquery-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
