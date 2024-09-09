@@ -58,6 +58,9 @@ gem 'bootstrap', '~> 5.3.2'
 gem 'dartsass-sprockets'
 gem 'jquery-rails'
 
+# Support for additional languages
+gem 'rails-i18n'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
