@@ -1,24 +1,9 @@
-# README
+# profile_info_taker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simply app to take info from the GitHub profile.
 
-Things you may want to cover:
+Built with: Rails 7.1.4, Ruby 3.2.2, Watir, Bootstrap.
 
-* Ruby version
+In the form on the start page, you must input GitHub login and press the search button. After that, you will see a page with the results of the search. You will see a username, list, and count of his public repositories if this profile exists. You can also click on the "New search" button, which redirects you to the start page.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Search history doesn't save. In this simple app, the database is not created.
