@@ -1,0 +1,23 @@
+<div class="container position-absolute top-0 start-50 translate-middle-x">
+    <h4 class="text-center pt-2"><%= t('.title') %> "<%= @search_params %>" </h4>
+
+    <% if @username.present? %>
+        <b><%= t('.username') %>:</b> <%= @username %><br>
+        <b><%= t('.repos') %> (<%= @repositories.count %>):</b>
+        <% if @repositories.count != 0 %>
+            <ul>
+                <% @repositories.each do |repository| %>
+                    <li><%= repository %></li>
+                <% end %>
+            </ul>
+        <% else %>
+            <p><%= t('.repos_not_found') %></p>
+        <% end %>
+    <% else %>
+        <p class="text-center text-danger"><%= t('.user_not_found') %></p>
+    <% end %>
+
+    <div class="text-center pb-2">
+        <%= link_to t('button.new_search'), root_path, class: "btn btn-primary" %>
+    </div>
+</div>

@@ -1,2 +1,19 @@
 uk:
-  appname: "Search info from Github profile"
+  appname: "Пошук інформації з профілю GitHub"
+
+  button:
+    search: "Шукати"
+    new_search: "Новий пошук"
+
+  alert:
+    search: "Введіть в поле профіль GitHub"
+
+  main:
+    index:
+      search_placeholder: "Введіть профіль GitHub"
+    search:
+      title: "Результати пошуку по профілю"
+      user_not_found: "Немає даних про такий профіль"
+      username: "Ім'я користувача"
+      repos: "Список публічних репозиторіїв"
+      repos_not_found: "У користувача немає публічних репозиторіїв"
