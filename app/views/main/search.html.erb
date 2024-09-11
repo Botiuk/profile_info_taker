@@ -1,6 +1,6 @@
 <div class="container position-absolute top-0 start-50 translate-middle-x">
     <h4 class="text-center pt-2"><%= t('.title') %> "<%= @search_params %>" </h4>
-    
+
     <% if @username.present? %>
         <b><%= t('.username') %>:</b> <%= @username %><br>
         <b><%= t('.repos') %> (<%= @repositories.count %>):</b>
@@ -19,6 +19,8 @@
     <% end %>
 
     <div class="text-center pb-2">
-        <%= link_to t('button.new_search'), root_path, class: "btn btn-primary" %>
+        <%= link_to root_path, class: "btn btn-primary" do %>
+            <i class="bi bi-arrow-repeat"></i> <%= t('button.new_search') %>
+        <% end %>
     </div>
 </div>

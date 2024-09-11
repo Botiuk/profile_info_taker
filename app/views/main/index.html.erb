@@ -10,7 +10,9 @@
                     <%= text_field_tag(:login, nil, autofocus: true, placeholder: t('.search_placeholder'), class: "text-center form-control border-primary") %>
                 </div>
                 <div class="col-auto">
-                    <%= button_tag(t('button.search'), type: "submit", :name => nil, class: "btn btn-primary", id: "searchButton") %>
+                    <%= button_tag(type: "submit", :name => nil, class: "btn btn-primary", id: "searchButton") do %>
+                        <i class="bi bi-search"></i> <%= t('button.search')%>
+                    <% end %>
                 </div>
             </div>
         </div>
