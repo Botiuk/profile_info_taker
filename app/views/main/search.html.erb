@@ -1,6 +1,6 @@
 <div class="container position-absolute top-0 start-50 translate-middle-x">
     <h4 class="text-center pt-2"><%= t('.title') %> "<%= @search_params %>" </h4>
-
+    
     <% if @username.present? %>
         <b><%= t('.username') %>:</b> <%= @username %><br>
         <b><%= t('.repos') %> (<%= @repositories.count %>):</b>
@@ -13,6 +13,7 @@
         <% else %>
             <p><%= t('.repos_not_found') %></p>
         <% end %>
+        <b><%= t('.search_time') %>:</b> <%= @search_time %> <%= t('.seconds') %><br>
     <% else %>
         <p class="text-center text-danger"><%= t('.user_not_found') %></p>
     <% end %>

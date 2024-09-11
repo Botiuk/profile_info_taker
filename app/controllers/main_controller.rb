@@ -5,6 +5,7 @@ class MainController < ApplicationController
 
   def search
     if params[:login].present?
+      search_start = Time.now.to_f
       browser = Watir::Browser.new headless: true
       browser.goto("https://github.com/#{params[:login]}?tab=repositories")
 
@@ -28,6 +29,8 @@ class MainController < ApplicationController
       end
 
       browser.close
+      search_end = Time.now.to_f
+      @search_time = (search_end - search_start).round(3)
       @search_params = params[:login]
     else
       redirect_to root_path, alert: t('alert.search')

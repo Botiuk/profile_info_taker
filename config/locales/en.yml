@@ -6,7 +6,7 @@ en:
     new_search: "New search"
 
   alert:
-    search: "Enter GitHub profile in the field"
+    search: "The search field cannot be empty. Enter GitHub profile in the field!"
 
   main:
     index:
@@ -17,3 +17,5 @@ en:
       username: "User name"
       repos: "List of public repositories"
       repos_not_found: "The user has no public repositories"
+      search_time: "Search time"
+      seconds: "sec"
