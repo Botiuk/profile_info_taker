@@ -1,2 +1,19 @@
 en:
   appname: "Search info from GitHub profile"
+
+  button:
+    search: "Search"
+    new_search: "New search"
+
+  alert:
+    search: "Enter GitHub profile in the field"
+
+  main:
+    index:
+      search_placeholder: "Enter GitHub profile"
+    search:
+      title: "Search results by profile"
+      user_not_found: "There is no data for this profile"
+      username: "User name"
+      repos: "List of public repositories"
+      repos_not_found: "The user has no public repositories"
