@@ -1,0 +1,23 @@
+#loader {
+    border: 12px solid #b4deec;
+    border-radius: 50%;
+    border-top: 12px solid #3B71CA;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
