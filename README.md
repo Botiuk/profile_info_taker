@@ -2,7 +2,7 @@
 
 Simply app to take info from the GitHub profile.
 
-Built with: Rails 7.1.4, Ruby 3.2.2, Watir, Bootstrap.
+Built with: Rails 7.2.1, Ruby 3.3.5, Watir, Bootstrap.
 
 My native language is Ukrainian and this is the default language on the app. All interface text was made with I18n, also available English locale. Language is automatically set based on your browser preferences.
 
