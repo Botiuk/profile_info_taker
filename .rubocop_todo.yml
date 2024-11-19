@@ -1,0 +1,15 @@
+Metrics/MethodLength:
+  Exclude:
+    - 'app/controllers/main_controller.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'app/controllers/main_controller.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/development.rb'
+
+Rails/Blank:
+  Exclude:
+    - 'app/controllers/main_controller.rb'

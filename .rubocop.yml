@@ -1,7 +1,14 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-rails
+  - rubocop-performance
+
 AllCops:
   NewCops: enable
 
 Style/Documentation:
   Enabled: false
-  
-require: rubocop-rails
+
+Layout/EndOfLine:
+  Enabled: False
